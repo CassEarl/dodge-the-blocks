@@ -7,6 +7,26 @@
 </head>
 <body>
     <h1>Dodge the Blocks!</h1>
+    <div id="ui">
+        <div id="health">Health: ❤️❤️❤️</div>
+        <div id="scoreDisplay">Score: 0</div>
+        <Button id="restartButton" onclick="restartGame()" style="display:none;">Restart</Button>
+        <Button id="muteButton" onclick="toggleMute()">Mute</Button>
+    </div>
+
+    <div id="leaderboard" style="margin-top: 20px;">
+        <h3>High Scores</h3>
+        <ol id="scoreList"></ol>
+    </div>
+
+    <div id="submitScore" style="display:none; margin-top: 20px;">
+        <label for="playerName">Name: </label>
+        <input type="text" id="playerName" maxLength="20" placeholder="Anonymous">
+        <button onclick="submitScore()">Submit Score</button>
+    </div>
+
+    <p id="bestScore"></p>
+
     <p>Use Left and Right Arrows to move</p>
     <canvas id="gameCanvas" width="800" height="600"></canvas>
     <script src="{{ url_for('static', filename='script.js') }}"></script>

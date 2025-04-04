@@ -11,3 +11,43 @@ canvas {
     background-color: #222;
     border: 2px solid #555;
 }
+
+canvas.flash {
+    background-color: red !important;
+    transition: background-color 0.3s ease;
+}
+
+#ui {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#restartButton {
+    font-size: 18px;
+    padding: 6px 12px;
+    background-color: burlywood;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    margin-top: 10px;
+}
+
+#restartButton:hover {
+    background-color: burlywood;
+}
+
+#muteButton {
+    font-size: 18px;
+    padding: 6px 12px;
+    background-color: burlywood;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    margin-top: 10px;
+}
+
+#muteButton:hover {
+    background-color: burlywood;
+}
